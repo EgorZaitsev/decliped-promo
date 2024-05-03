@@ -1,0 +1,32 @@
+{
+  "name": "decliped-promo-api",
+  "module": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "pkg": {
+    "bin": "index.js",
+    "assets": [
+      "images/**/*",
+      "data/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "scripts": "build/**/*.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "nodemon": "^3.1.0",
+    "vk-io": "^4.9.1"
+  }
+}
